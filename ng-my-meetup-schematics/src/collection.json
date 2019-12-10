@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-my-meetup-schematics": {
+      "description": "A blank schematic.",
+      "factory": "./ng-my-meetup-schematics/index#ngMyMeetupSchematics"
+    },
+    "data-table": {
+      "description": "A blank schematic.",
+      "factory": "./data-table/index#dataTable",
+      "schema": "./data-table/schema.json"
+    }
+  }
+}

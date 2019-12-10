@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "DataTableSchema",
+    "title": "Data Table Schema",
+    "type": "object",
+    "description": "Generate a data table",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the data table.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name would you like to use for the data table?"
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path at which to create component file, relative to the current workspace.",
+            "visible": false
+        },
+        "project": {
+            "type": "string",
+            "description": "Name of the project.",
+            "$default": {
+                "$source": "projectName"
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
