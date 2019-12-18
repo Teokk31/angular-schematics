@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "HelloWorldSchema",
+    "title": "Hello World Schema",
+    "type": "object",
+    "description": "Generate a text file",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name in the text file",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name would you like to say hello to?"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
