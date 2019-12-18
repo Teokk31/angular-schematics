@@ -10,9 +10,9 @@ This is the code demo on how to create angular custom schematics.
 * `npm install -g @angular/cli`
 * `npm install -g @angular-devkit/schematics-cli`
 1. git clone https://github.com/Teokk31/angular-schematics.git
-2. `cd angular-schematics/schematics-working-app`
+2. cd angular-schematics/schematics-working-app
 3. `npm install`
-4. `cd angular-schematics/meetup-schematics`
+4. cd angular-schematics/meetup-schematics
 5. `npm install`
 
 # Custom Schematic Project Structure
